@@ -14,7 +14,7 @@ defaults used.
 library(knitr)
 opts_chunk$set(warning = FALSE, 
                message = FALSE, 
-               fig.path = "figures/")
+               fig.path = "figure/")
 
 ## Sys.setlocale is used in the final part of the assignment as english
 ## day names are used.
@@ -58,7 +58,7 @@ act$date <- as.Date(as.character(act$date), format = "%Y-%m-%d")
            geom_histogram()
     ```
     
-    ![](figures/unnamed-chunk-4-1.png)<!-- -->
+    ![](figure/unnamed-chunk-4-1.png)<!-- -->
 
 2. Calculate and report the **mean** and **median** total number steps taken per
 day
@@ -101,7 +101,7 @@ and the average number of steps taken, averaged across all days (y-axis)
             geom_line()
     ```
     
-    ![](figures/unnamed-chunk-7-1.png)<!-- -->
+    ![](figure/unnamed-chunk-7-1.png)<!-- -->
 
 2. Which 5-minute interval, on average across all days in the dataset, contains
 the maximum number of steps?
@@ -215,7 +215,7 @@ number of steps?
            geom_histogram()
     ```
     
-    ![](figures/unnamed-chunk-13-1.png)<!-- -->
+    ![](figure/unnamed-chunk-13-1.png)<!-- -->
     
     That compared with the one on the first part on the assignment, it's clearly
     shown the effect of the `NA` filling just in the middle (the `mean`) of
@@ -230,7 +230,7 @@ number of steps?
            geom_histogram()
     ```
     
-    ![](figures/unnamed-chunk-14-1.png)<!-- -->
+    ![](figure/unnamed-chunk-14-1.png)<!-- -->
     
     Looking to median and mean, the data with no `NAs`
     
@@ -321,7 +321,7 @@ across all weekday days or weekend days (y-axis).
             facet_grid(facets = daytype~.)
     ```
     
-    ![](figures/unnamed-chunk-19-1.png)<!-- -->
+    ![](figure/unnamed-chunk-19-1.png)<!-- -->
 
     From the plot, some conclusions can be reached:
     
