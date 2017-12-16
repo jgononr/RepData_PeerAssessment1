@@ -176,8 +176,8 @@ number of steps?
     Looking to median and mean, the data with no `NAs`
     
     ```{r}
-    mean(fsumact$total, na.rm = TRUE)
-    median(fsumact$total, na.rm = TRUE)
+    mean(fsumact$total)
+    median(fsumact$total)
     ```
 
     Comparing the with the ones in the first part:
@@ -187,8 +187,8 @@ number of steps?
     median(sumact$total, na.rm = TRUE)
     ```
     
-    They're quite similar as using the mean as the value to fill the `NAs`
-    will make both values more similar.
+    The mean is the same before and after the `NA` filling. Median is also
+    made the same per the followed filling strategy.
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
